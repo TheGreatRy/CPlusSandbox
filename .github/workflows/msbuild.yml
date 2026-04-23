@@ -48,3 +48,7 @@ jobs:
         node-version: '20'
     - run: npm install -g bats
     - run: bats -v
+
+    - uses: actions/checkout@v4
+    - uses: actions/upload-pages-artifact@v4
+    - uses: actions/deploy-pages@v4
