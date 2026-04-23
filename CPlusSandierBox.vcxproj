@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{9a74e755-8308-4d41-a0ba-1ff918199d56}</ProjectGuid>
-    <RootNamespace>CPlusSandbox</RootNamespace>
+    <ProjectGuid>{86350c7f-9be3-46c8-84f4-011c6d64a147}</ProjectGuid>
+    <RootNamespace>CPlusSandierBox</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>CPlusSandbox</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -123,20 +124,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CPlusSandbox.h" />
-    <ClInclude Include="framework.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="targetver.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="CPlusSandbox.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="CPlusSandbox.rc" />
-  </ItemGroup>
-  <ItemGroup>
-    <Image Include="CPlusSandbox.ico" />
-    <Image Include="small.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
