@@ -48,7 +48,14 @@ jobs:
         node-version: '20'
     - run: npm install -g bats
     - run: bats -v
-
-    - uses: actions/checkout@v4
-    - uses: actions/upload-pages-artifact@v4
-    - uses: actions/deploy-pages@v4
+    
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{steps.deployment.outputs.page_url}}
+    runs-on: windows-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
